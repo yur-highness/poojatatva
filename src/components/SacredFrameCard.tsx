@@ -59,11 +59,11 @@ export const SacredFrameCard: React.FC<SacredFrameCardProps> = ({
         >
           <defs>
             <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#FADAD1" stopOpacity="0.94" />
-              <stop offset="28%" stopColor="#DF9E97" stopOpacity="0.84" />
-              <stop offset="55%" stopColor="#8E5B61" stopOpacity="0.72" />
-              <stop offset="80%" stopColor="#F4CBC1" stopOpacity="0.9" />
-              <stop offset="100%" stopColor="#A97074" stopOpacity="0.8" />
+              <stop offset="0%" stopColor="#FAF0E4" stopOpacity="0.94" />
+              <stop offset="28%" stopColor="#F5DABF" stopOpacity="0.88" />
+              <stop offset="56%" stopColor="#6C151E" stopOpacity="0.86" />
+              <stop offset="82%" stopColor="#F5DABF" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#0F3D3A" stopOpacity="0.88" />
             </linearGradient>
           </defs>
           <path
@@ -74,7 +74,7 @@ export const SacredFrameCard: React.FC<SacredFrameCardProps> = ({
           />
           <path
             d={SACRED_ARCH_INNER_PATH}
-            stroke="rgba(244,203,193,0.22)"
+            stroke="rgba(245,218,191,0.3)"
             strokeWidth="0.9"
             vectorEffect="non-scaling-stroke"
           />

@@ -151,7 +151,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your name"
-                className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               />
             </div>
 
@@ -170,7 +170,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="10-digit mobile"
-                  className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
               <div>
@@ -186,7 +186,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
-                  className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
             </div>
@@ -205,7 +205,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
                 placeholder="House, street, locality"
-                className="w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] p-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] p-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               />
             </div>
 
@@ -223,7 +223,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                   placeholder="City, PIN code"
-                  className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
               <div>
@@ -237,7 +237,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                   id="paymentMethod"
                   value={paymentMethod}
                   onChange={(e) => setPaymentMethod(e.target.value)}
-                  className="select-clean min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="select-clean min-h-[46px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 >
                   <option>Cash on delivery (demo)</option>
                   <option>UPI (demo only)</option>
@@ -334,12 +334,12 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({
                     setRedeemCoins(Math.max(0, Math.min(cap, v)));
                   }}
                   aria-label="Coins to redeem"
-                  className="min-h-[36px] w-24 rounded-lg border border-[var(--line-2)] bg-[#12100D] px-2.5 text-right text-[13px] tabular-nums focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[36px] w-24 rounded-lg border border-[var(--line-2)] bg-[#071A18] px-2.5 text-right text-[13px] tabular-nums focus:border-[var(--clay)] focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => setRedeemCoins(cap)}
-                  className="min-h-[32px] rounded-lg border border-[var(--line-2)] bg-[#201C16] px-3 text-[11.5px] font-semibold text-[var(--ink-2)] hover:border-[var(--clay)] hover:text-[var(--clay-2)]"
+                  className="min-h-[32px] rounded-lg border border-[var(--line-2)] bg-[#6C151E] px-3 text-[11.5px] font-semibold text-[#F5DABF] hover:border-[#F5DABF]"
                 >
                   Use max
                 </button>
@@ -447,7 +447,7 @@ export const OrdersPage: React.FC<{ orders: Order[]; onGoShop: () => void }> = (
           </thead>
           <tbody className="divide-y divide-[var(--line)]">
             {orders.map((order) => (
-              <tr key={order.id} className="transition-colors hover:bg-[#1F1C16]">
+              <tr key={order.id} className="transition-colors hover:bg-[#0F3D3A]">
                 <td className="px-3 py-3.5 font-semibold text-[var(--ink)] tabular-nums">
                   {order.id}
                 </td>
@@ -523,7 +523,7 @@ export const AccountPage: React.FC<{
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="space-y-5">
-          <div className="relative overflow-hidden rounded-2xl border border-[var(--clay)]/30 bg-[radial-gradient(90%_120%_at_100%_0%,rgba(223,158,151,0.18),transparent_62%),linear-gradient(160deg,#26313C,#1B222A)] p-5 sm:p-6">
+          <div className="relative overflow-hidden rounded-2xl border border-[#F5DABF]/35 bg-[radial-gradient(90%_120%_at_100%_0%,rgba(245,218,191,0.18),transparent_62%),linear-gradient(155deg,#6C151E,#0F3D3A)] p-5 sm:p-6">
             <div className="flex flex-wrap items-start justify-between gap-3 sm:gap-4">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">
@@ -663,7 +663,7 @@ export const AccountPage: React.FC<{
                   value={form.name}
                   onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
                   placeholder="Your name"
-                  className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
               <div>
@@ -678,7 +678,7 @@ export const AccountPage: React.FC<{
                   value={form.phone}
                   onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
                   placeholder="Your mobile number"
-                  className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
               <div>
@@ -693,7 +693,7 @@ export const AccountPage: React.FC<{
                   value={form.email}
                   onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
                   placeholder="Your email"
-                  className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
               <button
@@ -796,7 +796,7 @@ export const ReturnsPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
             value={orderId}
             onChange={(e) => setOrderId(e.target.value)}
             placeholder="PT-1001"
-            className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+            className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
           />
         </div>
         <div>
@@ -810,7 +810,7 @@ export const ReturnsPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
             id="returnReason"
             value={reason}
             onChange={(e) => setReason(e.target.value)}
-            className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+            className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
           >
             <option>Arrived damaged</option>
             <option>Wrong item received</option>
@@ -832,7 +832,7 @@ export const ReturnsPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
             value={detail}
             onChange={(e) => setDetail(e.target.value)}
             placeholder="A short description helps us fix it faster"
-            className="w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] p-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+            className="w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] p-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
           />
         </div>
         <button type="submit" className="btn-gold min-h-[44px] rounded-xl px-5 text-[14px]">
@@ -893,7 +893,7 @@ export const SupportPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Full name"
-              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
             />
           </div>
           <div>
@@ -909,7 +909,7 @@ export const SupportPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
               value={contact}
               onChange={(e) => setContact(e.target.value)}
               placeholder="How we reply"
-              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
             />
           </div>
         </div>
@@ -924,7 +924,7 @@ export const SupportPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
             id="supportTopic"
             value={topic}
             onChange={(e) => setTopic(e.target.value)}
-            className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+            className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
           >
             <option>Order enquiry</option>
             <option>Product information</option>
@@ -947,7 +947,7 @@ export const SupportPage: React.FC<{ onSubmitTicket: (type: string) => void }> =
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="How can we help"
-            className="w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] p-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+            className="w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] p-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
           />
         </div>
         <button type="submit" className="btn-gold min-h-[44px] rounded-xl px-5 text-[14px]">

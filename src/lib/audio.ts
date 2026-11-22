@@ -1,4 +1,4 @@
-import {type RitualSoundKind } from '../types';
+import type{ RitualSoundKind } from '../types';
 
 let sfxCtx: AudioContext | null = null;
 let omAudioContext: AudioContext | null = null;

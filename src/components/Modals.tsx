@@ -55,7 +55,7 @@ export const BagDrawer: React.FC<BagDrawerProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex justify-end bg-[#181F26]/55 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex justify-end bg-[#092220]/55 backdrop-blur-sm"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -120,7 +120,7 @@ export const BagDrawer: React.FC<BagDrawerProps> = ({
                           className="h-full w-full object-cover object-center"
                         />
                       ) : (
-                        <ArtSvg name={p.art} className="w-[64%] text-[#ECC4BA]" />
+                        <ArtSvg name={p.art} className="w-[64%] text-[var(--sage)]" />
                       )}
                     </div>
                     <div className="min-w-0">
@@ -302,7 +302,7 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 grid place-items-center bg-[#181F26]/65 p-3.5 backdrop-blur-sm"
+      className="fixed inset-0 z-50 grid place-items-center bg-[#092220]/65 p-3.5 backdrop-blur-sm"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -314,7 +314,7 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
         <div className="flex items-start justify-between gap-4 px-5 pt-5">
           <div className="flex items-start gap-3">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-[var(--clay)]/25 bg-[var(--clay)]/10">
-              <ArtSvg name={ritualMeta.art} className="w-7 text-[#E4D2B4]" />
+              <ArtSvg name={ritualMeta.art} className="w-7 text-[var(--sage)]" />
             </span>
             <div>
               <h2 id="serviceTitle" className="font-serif-display text-[26px] font-normal leading-tight text-[var(--ink)]">
@@ -363,12 +363,12 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                 value={person}
                 onChange={(e) => setPerson(e.target.value)}
                 placeholder="Full name"
-                className={`min-h-[44px] w-full rounded-xl border bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:outline-none ${
+                className={`min-h-[44px] w-full rounded-xl border bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:outline-none ${
                   errors.person ? 'border-[var(--crimson)]' : 'border-[var(--line-2)] focus:border-[var(--clay)]'
                 }`}
               />
               {errors.person && (
-                <p className="mt-1 flex items-center gap-1.5 text-[11.5px] text-[#F0A69E]">
+                <p className="mt-1 flex items-center gap-1.5 text-[11.5px] text-[var(--clay-2)]">
                   <AlertCircle className="h-3.5 w-3.5" />
                   <span>{errors.person}</span>
                 </p>
@@ -389,12 +389,12 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="10-digit mobile"
-                  className={`min-h-[44px] w-full rounded-xl border bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:outline-none ${
+                  className={`min-h-[44px] w-full rounded-xl border bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:outline-none ${
                     errors.phone ? 'border-[var(--crimson)]' : 'border-[var(--line-2)] focus:border-[var(--clay)]'
                   }`}
                 />
                 {errors.phone && (
-                  <p className="mt-1 flex items-center gap-1.5 text-[11.5px] text-[#F0A69E]">
+                  <p className="mt-1 flex items-center gap-1.5 text-[11.5px] text-[var(--clay-2)]">
                     <AlertCircle className="h-3.5 w-3.5" />
                     <span>{errors.phone}</span>
                   </p>
@@ -412,12 +412,12 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                   placeholder="City"
-                  className={`min-h-[44px] w-full rounded-xl border bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:outline-none ${
+                  className={`min-h-[44px] w-full rounded-xl border bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:outline-none ${
                     errors.city ? 'border-[var(--crimson)]' : 'border-[var(--line-2)] focus:border-[var(--clay)]'
                   }`}
                 />
                 {errors.city && (
-                  <p className="mt-1 flex items-center gap-1.5 text-[11.5px] text-[#F0A69E]">
+                  <p className="mt-1 flex items-center gap-1.5 text-[11.5px] text-[var(--clay-2)]">
                     <AlertCircle className="h-3.5 w-3.5" />
                     <span>{errors.city}</span>
                   </p>
@@ -438,7 +438,7 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                   type="date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
-                  className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 />
               </div>
               <div>
@@ -452,7 +452,7 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                   id="serviceSlot"
                   value={slot}
                   onChange={(e) => setSlot(e.target.value)}
-                  className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                  className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                 >
                   <option>6:30 am</option>
                   <option>9:00 am</option>
@@ -475,7 +475,7 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
                 placeholder="Occasion, language, number of people"
-                className="w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] p-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] p-3 text-[14.5px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               />
             </div>
 
@@ -490,7 +490,7 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                 id="servicePay"
                 value={payMethod}
                 onChange={(e) => setPayMethod(e.target.value)}
-                className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               >
                 <option>UPI (demo)</option>
                 <option>Card (demo)</option>
@@ -518,12 +518,12 @@ export const ServiceBookingModal: React.FC<ServiceBookingModalProps> = ({
                     setRedeemCoins(Math.max(0, Math.min(cap, v)));
                   }}
                   aria-label="Coins to redeem"
-                  className="min-h-[36px] w-24 rounded-lg border border-[var(--line-2)] bg-[#12100D] px-2.5 text-right text-[13px] tabular-nums focus:border-[var(--clay)] focus:outline-none"
+                  className="min-h-[36px] w-24 rounded-lg border border-[var(--line-2)] bg-[#071A18] px-2.5 text-right text-[13px] tabular-nums focus:border-[var(--clay)] focus:outline-none"
                 />
                 <button
                   type="button"
                   onClick={() => setRedeemCoins(cap)}
-                  className="min-h-[32px] rounded-lg border border-[var(--line-2)] bg-[#201C16] px-3 text-[11.5px] font-semibold text-[var(--ink-2)] hover:border-[var(--clay)] hover:text-[var(--clay-2)]"
+                  className="min-h-[32px] rounded-lg border border-[var(--line-2)] bg-[#6C151E] px-3 text-[11.5px] font-semibold text-[#F5DABF] hover:border-[#F5DABF]"
                 >
                   Use max
                 </button>
@@ -594,8 +594,8 @@ export const RitualConfirmModal: React.FC<RitualConfirmModalProps> = ({
       aria-modal="true"
       aria-labelledby="ritualTitle"
     >
-      <div className="w-full max-w-[540px] overflow-hidden rounded-[22px] border border-[#3B3428] bg-[#141210] shadow-[0_60px_120px_-40px_#000]">
-        <div className="relative h-[240px] overflow-hidden bg-[radial-gradient(80%_80%_at_50%_42%,#2C2216,#0C0B09_78%)] sm:h-[290px]">
+      <div className="w-full max-w-[540px] overflow-hidden rounded-[22px] border border-[var(--line-2)] bg-[#092220] shadow-[0_60px_120px_-40px_#000]">
+        <div className="relative h-[240px] overflow-hidden bg-[radial-gradient(80%_80%_at_50%_42%,#6C151E,#092220_78%)] sm:h-[290px]">
           {cfg.kind === 'jal' ? (
             <>
               <span className="scene-glow jal-glow" />
@@ -609,7 +609,7 @@ export const RitualConfirmModal: React.FC<RitualConfirmModalProps> = ({
               <span className="ripple r3" />
               <ArtSvg
                 name={cfg.art}
-                className="absolute left-1/2 top-[62%] w-[140px] -translate-x-1/2 -translate-y-1/2 text-[#E4D2B4] drop-shadow-[0_14px_26px_rgba(0,0,0,0.65)]"
+                className="absolute left-1/2 top-[62%] w-[140px] -translate-x-1/2 -translate-y-1/2 text-[var(--sage)] drop-shadow-[0_14px_26px_rgba(0,0,0,0.65)]"
               />
             </>
           ) : cfg.kind === 'prasad' ? (
@@ -622,7 +622,7 @@ export const RitualConfirmModal: React.FC<RitualConfirmModalProps> = ({
               <span className="petal p5" />
               <ArtSvg
                 name={cfg.art}
-                className="absolute left-1/2 top-[58%] w-[140px] -translate-x-1/2 -translate-y-1/2 text-[#E4D2B4] drop-shadow-[0_14px_26px_rgba(0,0,0,0.65)]"
+                className="absolute left-1/2 top-[58%] w-[140px] -translate-x-1/2 -translate-y-1/2 text-[var(--sage)] drop-shadow-[0_14px_26px_rgba(0,0,0,0.65)]"
               />
             </>
           ) : (
@@ -636,7 +636,7 @@ export const RitualConfirmModal: React.FC<RitualConfirmModalProps> = ({
               <span className="ember e3" />
               <ArtSvg
                 name={cfg.art}
-                className="absolute left-1/2 top-[52%] w-[160px] -translate-x-1/2 -translate-y-1/2 text-[#E4D2B4] drop-shadow-[0_14px_26px_rgba(0,0,0,0.65)]"
+                className="absolute left-1/2 top-[52%] w-[160px] -translate-x-1/2 -translate-y-1/2 text-[var(--sage)] drop-shadow-[0_14px_26px_rgba(0,0,0,0.65)]"
               />
             </>
           )}
@@ -729,7 +729,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 grid place-items-center bg-[#181F26]/65 p-3.5 backdrop-blur-sm"
+      className="fixed inset-0 z-50 grid place-items-center bg-[#092220]/65 p-3.5 backdrop-blur-sm"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -771,7 +771,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Brass camphor holder"
-              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
             />
           </div>
 
@@ -790,7 +790,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
                 placeholder="499"
-                className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               />
             </div>
             <div>
@@ -804,7 +804,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                 id="prodCat"
                 value={category}
                 onChange={(e) => setCategory(e.target.value as Product['category'])}
-                className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               >
                 <option>Pooja Essentials</option>
                 <option>Spiritual Wellness</option>
@@ -826,7 +826,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                 inputMode="numeric"
                 value={stock}
                 onChange={(e) => setStock(e.target.value)}
-                className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               />
             </div>
             <div>
@@ -840,7 +840,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                 id="prodTone"
                 value={tone}
                 onChange={(e) => setTone(e.target.value as Tone)}
-                className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                className="select-clean min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
               >
                 <option value="sand">Sand</option>
                 <option value="clay">Clay</option>
@@ -863,7 +863,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
               placeholder="One line for the card"
-              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+              className="min-h-[44px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3.5 text-[15px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
             />
           </div>
 

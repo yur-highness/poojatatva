@@ -31,7 +31,7 @@ export const MobileTabbar: React.FC<MobileTabbarProps> = ({
   return (
     <nav
       aria-label="Store sections"
-      className="fixed inset-x-0 bottom-0 z-40 flex border-t border-[var(--line)] bg-[#181F26]/95 px-1 pb-[calc(6px+env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-lg md:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 flex border-t border-[var(--line)] bg-[#0F3D3A]/95 px-1 pb-[calc(6px+env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-lg md:hidden"
     >
       {tabs.map(({ id, label, Icon, action }) => {
         const active = activePage === id;

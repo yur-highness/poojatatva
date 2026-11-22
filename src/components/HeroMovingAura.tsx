@@ -151,9 +151,9 @@ export const HeroMovingAura: React.FC = () => {
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 z-0 overflow-hidden select-none"
     >
-      {/* Slate-Blue & Blush Rose-Gold Atmospheric Glow */}
+      {/* Bordo (#6C151E) & Green (#0F3D3A) Atmospheric Studio Glow */}
       <div
-        className="absolute -top-24 left-[6%] h-[68vw] max-h-[520px] w-[88vw] max-w-[620px] rounded-full bg-[radial-gradient(circle,rgba(223,158,151,0.22)_0%,rgba(68,85,100,0.26)_44%,transparent_72%)] blur-3xl sm:left-[12%]"
+        className="absolute -top-24 left-[6%] h-[68vw] max-h-[520px] w-[88vw] max-w-[620px] rounded-full bg-[radial-gradient(circle,rgba(108,21,30,0.44)_0%,rgba(15,61,58,0.34)_48%,transparent_72%)] blur-3xl sm:left-[12%]"
       />
 
       {/* Feathered Reference Texture Overlay (Sculpted Slate & Rose Blend) */}
@@ -204,27 +204,27 @@ export const HeroMovingAura: React.FC = () => {
           strokeWidth="0.9"
           strokeLinecap="round"
         />
-        {/* Fine Rose-Gold Leaves */}
+        {/* Fine Cream & Bordo Leaves */}
         <path
           className="aura-bloom"
           d="M148 56 Q 168 32 192 42 Q 172 64 148 56 Z"
-          stroke="#F4CBC1"
+          stroke="#F5DABF"
           strokeWidth="0.85"
-          fill="rgba(223,158,151,0.14)"
+          fill="rgba(108,21,30,0.28)"
         />
         <path
           className="aura-bloom"
           d="M42 156 Q 16 174 28 198 Q 52 180 42 156 Z"
-          stroke="#F4CBC1"
+          stroke="#F5DABF"
           strokeWidth="0.85"
-          fill="rgba(223,158,151,0.12)"
+          fill="rgba(15,61,58,0.32)"
         />
         <path
           className="aura-bloom"
           d="M56 324 Q 90 314 98 338 Q 70 344 56 324 Z"
-          stroke="#F4CBC1"
+          stroke="#F5DABF"
           strokeWidth="0.85"
-          fill="rgba(223,158,151,0.14)"
+          fill="rgba(108,21,30,0.28)"
         />
         {/* 5-Petal Filigree Blossom */}
         <g className="aura-bloom" transform="translate(82 72)">
@@ -233,18 +233,18 @@ export const HeroMovingAura: React.FC = () => {
               key={deg}
               d="M0 0 C -5 -9, -4 -18, 0 -20 C 4 -18, 5 -9, 0 0 Z"
               transform={`rotate(${deg})`}
-              stroke="#F4CBC1"
+              stroke="#F5DABF"
               strokeWidth="0.9"
-              fill="rgba(244,203,193,0.18)"
+              fill="rgba(108,21,30,0.34)"
             />
           ))}
-          <circle r="2.6" fill="#F4CBC1" />
+          <circle r="2.6" fill="#F5DABF" />
         </g>
         <defs>
           <linearGradient id="heroVineGold" x1="0" y1="0" x2="360" y2="520" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#F4CBC1" stopOpacity="0.85" />
-            <stop offset="55%" stopColor="#DF9E97" stopOpacity="0.55" />
-            <stop offset="100%" stopColor="#6F4C54" stopOpacity="0.16" />
+            <stop offset="0%" stopColor="#F5DABF" stopOpacity="0.85" />
+            <stop offset="55%" stopColor="#6C151E" stopOpacity="0.68" />
+            <stop offset="100%" stopColor="#0F3D3A" stopOpacity="0.32" />
           </linearGradient>
         </defs>
       </svg>
@@ -270,34 +270,34 @@ export const HeroMovingAura: React.FC = () => {
           strokeWidth="1"
           strokeLinecap="round"
         />
-        {/* Small Rose-Gold Leaves */}
+        {/* Small Cream & Green Leaves */}
         <path
           className="aura-bloom"
           d="M368 258 Q 338 242 332 266 Q 354 274 368 258 Z"
-          stroke="#F4CBC1"
+          stroke="#F5DABF"
           strokeWidth="0.85"
-          fill="rgba(223,158,151,0.16)"
+          fill="rgba(15,61,58,0.34)"
         />
         <path
           className="aura-bloom"
           d="M242 418 Q 214 438 228 456 Q 252 438 242 418 Z"
-          stroke="#F4CBC1"
+          stroke="#F5DABF"
           strokeWidth="0.85"
-          fill="rgba(223,158,151,0.16)"
+          fill="rgba(108,21,30,0.30)"
         />
-        {/* Blush Peach-Rose Blossoms */}
+        {/* Cream & Bordo Blossoms */}
         <g className="aura-bloom" transform="translate(342 308)">
           {[0, 72, 144, 216, 288].map((deg) => (
             <path
               key={deg}
               d="M0 0 C -4 -7, -3.5 -13, 0 -15 C 3.5 -13, 4 -7, 0 0 Z"
               transform={`rotate(${deg})`}
-              stroke="#F4CBC1"
+              stroke="#F5DABF"
               strokeWidth="0.85"
-              fill="rgba(244,203,193,0.28)"
+              fill="rgba(108,21,30,0.36)"
             />
           ))}
-          <circle r="2.1" fill="#FDECE8" />
+          <circle r="2.1" fill="#FAF0E4" />
         </g>
         <g className="aura-bloom" transform="translate(274 426) scale(0.76)">
           {[0, 72, 144, 216, 288].map((deg) => (
@@ -305,23 +305,23 @@ export const HeroMovingAura: React.FC = () => {
               key={deg}
               d="M0 0 C -4 -7, -3.5 -13, 0 -15 C 3.5 -13, 4 -7, 0 0 Z"
               transform={`rotate(${deg})`}
-              stroke="#F4CBC1"
+              stroke="#F5DABF"
               strokeWidth="0.85"
-              fill="rgba(244,203,193,0.22)"
+              fill="rgba(245,218,191,0.2)"
             />
           ))}
-          <circle r="2.1" fill="#FDECE8" />
+          <circle r="2.1" fill="#F5DABF" />
         </g>
         <defs>
           <linearGradient id="heroVineGoldR" x1="400" y1="500" x2="180" y2="60" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#F4CBC1" stopOpacity="0.85" />
-            <stop offset="60%" stopColor="#DF9E97" stopOpacity="0.55" />
-            <stop offset="100%" stopColor="#6F4C54" stopOpacity="0.16" />
+            <stop offset="0%" stopColor="#F5DABF" stopOpacity="0.85" />
+            <stop offset="60%" stopColor="#6C151E" stopOpacity="0.68" />
+            <stop offset="100%" stopColor="#0F3D3A" stopOpacity="0.32" />
           </linearGradient>
         </defs>
       </svg>
 
-      {/* Floating Warm Blush Sparkles & Micro-Blossoms */}
+      {/* Floating Cream & Bordo Sparkles */}
       {FLOATING_PARTICLES.map((pt, idx) => (
         <span
           key={idx}
@@ -345,18 +345,18 @@ export const HeroMovingAura: React.FC = () => {
                   rx="2.3"
                   ry="4.2"
                   transform={`rotate(${deg} 12 12)`}
-                  fill="rgba(244,203,193,0.48)"
-                  stroke="#F4CBC1"
+                  fill="rgba(108,21,30,0.45)"
+                  stroke="#F5DABF"
                   strokeWidth="0.7"
                 />
               ))}
-              <circle cx="12" cy="12" r="1.6" fill="#FDECE8" />
+              <circle cx="12" cy="12" r="1.6" fill="#F5DABF" />
             </svg>
           ) : (
             <svg viewBox="0 0 16 16" fill="none" className="h-full w-full">
               <path
                 d="M8 1 L9.4 6.6 L15 8 L9.4 9.4 L8 15 L6.6 9.4 L1 8 L6.6 6.6 Z"
-                fill="rgba(244,203,193,0.68)"
+                fill="rgba(245,218,191,0.72)"
               />
             </svg>
           )}
@@ -383,8 +383,8 @@ export const HeroShrineMandalaHalo: React.FC<HeroShrineMandalaHaloProps> = ({
       aria-hidden="true"
       className="pointer-events-none absolute left-1/2 top-[44%] z-0 aspect-square w-[112%] max-w-none -translate-x-1/2 -translate-y-1/2 select-none sm:top-[46%] sm:w-[124%]"
     >
-      {/* Dusty Slate + Peach-Rose Halo Behind the 3D Diya */}
-      <span className="absolute inset-[10%] rounded-full bg-[radial-gradient(circle,rgba(223,158,151,0.22)_0%,rgba(65,81,96,0.2)_45%,transparent_74%)] blur-2xl" />
+      {/* Bordo (#6C151E), Green (#0F3D3A) & Cream (#F5DABF) Halo Behind the 3D Diya */}
+      <span className="absolute inset-[10%] rounded-full bg-[radial-gradient(circle,rgba(245,218,191,0.22)_0%,rgba(108,21,30,0.34)_44%,rgba(15,61,58,0.18)_62%,transparent_76%)] blur-2xl" />
 
       {/* Outer Lotus Crown Ring */}
       <svg
@@ -397,7 +397,7 @@ export const HeroShrineMandalaHalo: React.FC<HeroShrineMandalaHaloProps> = ({
           cx="200"
           cy="200"
           r="176"
-          stroke="rgba(223,158,151,0.24)"
+          stroke="rgba(245,218,191,0.3)"
           strokeWidth="0.7"
           strokeDasharray="3 5"
         />
@@ -405,23 +405,23 @@ export const HeroShrineMandalaHalo: React.FC<HeroShrineMandalaHaloProps> = ({
           cx="200"
           cy="200"
           r="150"
-          stroke="rgba(223,158,151,0.18)"
+          stroke="rgba(245,218,191,0.2)"
           strokeWidth="0.6"
         />
         {outerPetals.map((deg) => (
           <g key={deg} transform={`rotate(${deg} 200 200)`}>
             <path
               d="M200 22 C 212 42, 214 64, 200 80 C 186 64, 188 42, 200 22 Z"
-              stroke="rgba(244,203,193,0.52)"
+              stroke="rgba(245,218,191,0.52)"
               strokeWidth="0.8"
-              fill="rgba(223,158,151,0.05)"
+              fill="rgba(108,21,30,0.18)"
             />
             <path
               d="M200 32 C 206 46, 206 60, 200 72 C 194 60, 194 46, 200 32 Z"
-              stroke="rgba(244,203,193,0.32)"
+              stroke="rgba(245,218,191,0.32)"
               strokeWidth="0.6"
             />
-            <circle cx="200" cy="14" r="1.4" fill="rgba(244,203,193,0.68)" />
+            <circle cx="200" cy="14" r="1.4" fill="rgba(245,218,191,0.72)" />
           </g>
         ))}
       </svg>
@@ -437,18 +437,18 @@ export const HeroShrineMandalaHalo: React.FC<HeroShrineMandalaHaloProps> = ({
           cx="200"
           cy="200"
           r="134"
-          stroke="rgba(244,203,193,0.26)"
+          stroke="rgba(245,218,191,0.28)"
           strokeWidth="0.8"
         />
         {innerPetals.map((deg) => (
           <g key={deg} transform={`rotate(${deg} 200 200)`}>
             <path
               d="M200 66 C 216 92, 214 118, 200 134 C 186 118, 184 92, 200 66 Z"
-              stroke="rgba(244,203,193,0.5)"
+              stroke="rgba(245,218,191,0.52)"
               strokeWidth="0.85"
-              fill="rgba(223,158,151,0.06)"
+              fill="rgba(15,61,58,0.24)"
             />
-            <circle cx="200" cy="58" r="1.3" fill="#F4CBC1" fillOpacity="0.65" />
+            <circle cx="200" cy="58" r="1.3" fill="#F5DABF" fillOpacity="0.72" />
           </g>
         ))}
       </svg>

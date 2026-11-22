@@ -453,7 +453,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
           </div>
 
-          <span className="anim-flicker pointer-events-none absolute left-1/2 top-[43%] h-[220px] w-[220px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(244,203,193,0.34)_0%,rgba(223,158,151,0.12)_46%,transparent_72%)] blur-2xl sm:top-[44%] sm:h-[380px] sm:w-[380px] lg:h-[460px] lg:w-[460px]" />
+          <span className="anim-flicker pointer-events-none absolute left-1/2 top-[43%] h-[220px] w-[220px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(245,218,191,0.28)_0%,rgba(108,21,30,0.36)_46%,transparent_72%)] blur-2xl sm:top-[44%] sm:h-[380px] sm:w-[380px] lg:h-[460px] lg:w-[460px]" />
 
           <div className="hero-bg-diya-float h-full w-full will-change-transform">
             <ShrineCanvas
@@ -473,7 +473,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         {/* Soft Contrast Veil Between Moving 3D Diya and Centered Foreground Typography */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_58%_48%_at_50%_54%,rgba(24,31,38,0.68)_0%,rgba(24,31,38,0.3)_58%,transparent_100%)]"
+          className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_58%_48%_at_50%_54%,rgba(9,34,32,0.74)_0%,rgba(15,61,58,0.34)_58%,transparent_100%)]"
         />
 
         {/* Hanging Vintage Brass Lanterns — Scroll-Scrubbed Pendulums */}
@@ -482,7 +482,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           aria-hidden="true"
           className="pointer-events-none absolute -top-2 -left-10 z-[3] hidden w-[128px] origin-top select-none opacity-30 md:block lg:-left-6 lg:w-[152px] lg:opacity-45 xl:left-0 xl:opacity-65 2xl:left-[max(1rem,calc((100vw-1420px)/2))] 2xl:w-[184px] 2xl:opacity-80 will-change-transform"
         >
-          <span className="pointer-events-none absolute bottom-[22%] left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,186,104,0.34),transparent_68%)] blur-xl" />
+          <span className="pointer-events-none absolute bottom-[22%] left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(245,218,191,0.32),transparent_68%)] blur-xl" />
           <TransparentOrnament
             src={ASSET_LANTERNS}
             mode="checker-edge"
@@ -496,7 +496,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           aria-hidden="true"
           className="pointer-events-none absolute -top-2 -right-8 z-[3] hidden w-[122px] origin-top select-none opacity-30 md:block lg:-right-5 lg:w-[144px] lg:opacity-45 xl:right-1 xl:opacity-65 2xl:right-[max(1rem,calc((100vw-1420px)/2))] 2xl:w-[172px] 2xl:opacity-80 will-change-transform"
         >
-          <span className="pointer-events-none absolute bottom-[26%] left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,186,104,0.34),transparent_68%)] blur-xl" />
+          <span className="pointer-events-none absolute bottom-[26%] left-1/2 h-24 w-24 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(245,218,191,0.32),transparent_68%)] blur-xl" />
           <TransparentOrnament
             src={ASSET_LANTERNS}
             mode="checker-edge"
@@ -572,7 +572,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* SIGNATURE SERVICES BAND */}
       <section
         id="services"
-        className="relative overflow-hidden border-y border-[var(--line)] bg-[radial-gradient(110%_90%_at_80%_-20%,rgba(223,158,151,0.14),transparent_56%),linear-gradient(180deg,rgba(32,41,50,0.86),rgba(24,31,38,0.9))] py-14 backdrop-blur-[2px] sm:py-20"
+        className="relative overflow-hidden border-y border-[var(--line)] bg-[radial-gradient(110%_90%_at_80%_-20%,rgba(108,21,30,0.52),transparent_58%),linear-gradient(180deg,rgba(72,13,19,0.9),rgba(15,61,58,0.92))] py-14 backdrop-blur-[2px] sm:py-20"
       >
         {/* Illuminated Corner Mandalas — Symmetrical Scroll Bloom */}
         <div
@@ -638,7 +638,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   className="aspect-[1/1.2]"
                   innerClassName={`tone-${svc.tone}`}
                 >
-                  <span className="absolute left-1/2 top-5 z-20 -translate-x-1/2 rounded-md bg-[#141A21]/65 px-2 py-0.5 text-[10px] font-medium tracking-[0.18em] text-[#DF9E97] backdrop-blur-sm tabular-nums sm:top-6">
+                  <span className="absolute left-1/2 top-5 z-20 -translate-x-1/2 rounded-md bg-[#6C151E]/90 px-2 py-0.5 text-[10px] font-medium tracking-[0.18em] text-[#F5DABF] backdrop-blur-sm tabular-nums sm:top-6">
                     0{idx + 1}
                   </span>
                   {svc.image ? (
@@ -657,7 +657,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       </div>
                       <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#141A21]/68 via-transparent via-45% to-[#141A21]/84"
+                        className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#081C1A]/65 via-transparent via-45% to-[#081C1A]/86"
                       />
                     </>
                   ) : (
@@ -667,14 +667,14 @@ export const HomePage: React.FC<HomePageProps> = ({
                     >
                       <ArtSvg
                         name={svc.art}
-                        className="w-[46%] text-[#ECC4BA] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+                        className="w-[46%] text-[#F5DABF] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
                       />
                     </div>
                   )}
                   <button
                     type="button"
                     onClick={() => onOpenService(svc.name)}
-                    className="absolute bottom-3.5 left-1/2 z-30 min-h-[28px] -translate-x-1/2 rounded-lg border border-[var(--clay)]/35 bg-[#1D252E]/92 px-3 text-[11px] font-medium text-[var(--ink)] backdrop-blur-md transition-colors hover:border-[var(--clay)] hover:bg-[#2E3A47] hover:text-[var(--clay-2)] sm:bottom-5 sm:min-h-[32px] sm:px-3.5 sm:text-[12px]"
+                    className="absolute bottom-3.5 left-1/2 z-30 min-h-[28px] -translate-x-1/2 rounded-lg border border-[#F5DABF]/35 bg-[#0F3D3A]/92 px-3 text-[11px] font-medium text-[#F5DABF] backdrop-blur-md transition-colors hover:border-[#F5DABF] hover:bg-[#6C151E] hover:text-[#F5DABF] sm:bottom-5 sm:min-h-[32px] sm:px-3.5 sm:text-[12px]"
                   >
                     Book
                   </button>
@@ -750,15 +750,15 @@ export const HomePage: React.FC<HomePageProps> = ({
       </section>
 
       {/* GSAP SCROLL-DRIVEN CINEMATIC RITUAL SCENE */}
-      <section id="cinema" className="relative border-b border-[var(--line)] bg-[#141B22]/82">
+      <section id="cinema" className="relative border-b border-[var(--line)] bg-[#092220]/90">
         <div ref={cinemaTrackRef} className="relative h-[260vh] lg:h-[310vh]">
           <div className="sticky top-0 grid h-[100svh] min-h-[560px] place-items-center overflow-hidden">
-            <div className="pointer-events-none absolute -inset-[10%] bg-[radial-gradient(52%_46%_at_50%_62%,rgba(244,203,193,0.18),transparent_68%),radial-gradient(70%_60%_at_50%_118%,rgba(223,158,151,0.14),transparent_70%),rgba(20,27,34,0.7)]" />
+            <div className="pointer-events-none absolute -inset-[10%] bg-[radial-gradient(52%_46%_at_50%_62%,rgba(108,21,30,0.44),transparent_68%),radial-gradient(70%_60%_at_50%_118%,rgba(15,61,58,0.5),transparent_70%),rgba(9,34,32,0.72)]" />
             <div
               ref={cinemaStarsRef}
               className="cinema-stars pointer-events-none absolute inset-0 opacity-45 will-change-transform"
             />
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_100%_at_50%_50%,transparent_34%,rgba(20,27,34,0.82)_78%)]" />
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_100%_at_50%_50%,transparent_34%,rgba(9,34,32,0.86)_78%)]" />
 
             {/* Carved Geometric Arch Borders — Scroll-Scrubbed Threshold Framing */}
             <div
@@ -795,7 +795,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   <br />
                   to the <em className="italic text-[var(--clay)]">altar.</em>
                 </h2>
-                <p className="mt-2.5 max-w-[44ch] text-[13px] leading-[1.6] text-[#D4C8C5] sm:mt-3.5 sm:text-[15.5px] sm:leading-[1.7]">
+                <p className="mt-2.5 max-w-[44ch] text-[13px] leading-[1.6] text-[var(--ink-2)] sm:mt-3.5 sm:text-[15.5px] sm:leading-[1.7]">
                   One booking, three moments. You choose the ritual, we set up the lamp and the
                   offerings, and the pooja is performed while you watch, or recorded for later.
                 </p>
@@ -846,7 +846,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               >
                 <span
                   ref={cinemaHaloRef}
-                  className="pointer-events-none absolute aspect-square w-[112px] rounded-full bg-[radial-gradient(circle,rgba(244,185,168,0.45),rgba(244,185,168,0)_66%)] blur-xl sm:w-[160px] lg:w-[60%]"
+                  className="pointer-events-none absolute aspect-square w-[112px] rounded-full bg-[radial-gradient(circle,rgba(245,218,191,0.36),rgba(108,21,30,0.28)_50%,transparent_68%)] blur-xl sm:w-[160px] lg:w-[60%]"
                 />
                 <div className="cinema-shrine-mask pointer-events-none absolute -inset-[6%] z-10">
                   <ShrineCanvas
@@ -971,7 +971,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#141A21]/40 via-transparent via-50% to-[#141A21]/72"
+                  className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#081C1A]/40 via-transparent via-50% to-[#081C1A]/76"
                 />
               </SacredFrameCard>
               <span className="mt-2.5 flex items-center gap-1.5 sm:mt-3 sm:items-baseline sm:gap-2.5">
@@ -999,7 +999,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               className="gsap-reveal group mx-auto aspect-[1/1.16] w-full max-w-[330px] sm:max-w-[440px] lg:max-w-[460px]"
               innerClassName="tone-clay flex items-center justify-center"
             >
-              <span className="absolute left-1/2 top-8 z-20 -translate-x-1/2 whitespace-nowrap rounded-md bg-[#141A21]/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-[var(--clay-2)] backdrop-blur-sm">
+              <span className="absolute left-1/2 top-8 z-20 -translate-x-1/2 whitespace-nowrap rounded-md bg-[#6C151E]/90 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-[#F5DABF] backdrop-blur-sm">
                 No. 02 · Serve
               </span>
               {featuredThali.image ? (
@@ -1018,7 +1018,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   </div>
                   <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#141A21]/68 via-transparent via-45% to-[#141A21]/72"
+                    className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#081C1A]/68 via-transparent via-45% to-[#081C1A]/78"
                   />
                 </>
               ) : (
@@ -1026,7 +1026,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   data-parallax-art
                   className="flex h-full w-full items-center justify-center will-change-transform"
                 >
-                  <ArtSvg name="thali" className="w-[48%] text-[#ECC4BA]" />
+                  <ArtSvg name="thali" className="w-[48%] text-[#F5DABF]" />
                 </div>
               )}
             </SacredFrameCard>

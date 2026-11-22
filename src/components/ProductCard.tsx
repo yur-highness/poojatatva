@@ -1,6 +1,6 @@
 import React from 'react';
 import { Plus } from 'lucide-react';
-import {type Product } from '../types';
+import type{ Product } from '../types';
 import { formatMoney } from '../data/storeData';
 import { ArtSvg } from './ArtSvg';
 import { SacredFrameCard } from './SacredFrameCard';
@@ -33,7 +33,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAdd }) => {
             </div>
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#141A21]/45 via-transparent via-45% to-[#141A21]/82"
+              className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#081C1A]/45 via-transparent via-45% to-[#081C1A]/82"
             />
           </>
         ) : (
@@ -43,7 +43,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAdd }) => {
           >
             <ArtSvg
               name={product.art}
-              className="w-[46%] text-[#ECC4BA] transition-transform duration-500 ease-out group-hover:scale-[1.06]"
+              className="w-[46%] text-[#F5DABF] transition-transform duration-500 ease-out group-hover:scale-[1.06]"
             />
           </div>
         )}
@@ -51,7 +51,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAdd }) => {
           type="button"
           onClick={() => onAdd(product.id)}
           aria-label={`Add ${product.name} to bag`}
-          className="absolute bottom-3.5 left-1/2 z-30 inline-flex h-7 -translate-x-1/2 items-center gap-1 rounded-lg border border-[var(--clay)]/30 bg-[#1D252E]/92 px-2.5 text-[11px] font-medium text-[var(--ink)] backdrop-blur-md transition-all duration-200 hover:border-[var(--clay)]/70 hover:bg-[#2E3A47] sm:bottom-5 sm:h-8 sm:gap-1.5 sm:px-3.5 sm:text-[12px] sm:translate-y-1.5 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:focus-visible:translate-y-0 sm:focus-visible:opacity-100"
+          className="absolute bottom-3.5 left-1/2 z-30 inline-flex h-7 -translate-x-1/2 items-center gap-1 rounded-lg border border-[#F5DABF]/35 bg-[#0F3D3A]/92 px-2.5 text-[11px] font-medium text-[#F5DABF] backdrop-blur-md transition-all duration-200 hover:border-[#F5DABF] hover:bg-[#6C151E] hover:text-[#F5DABF] sm:bottom-5 sm:h-8 sm:gap-1.5 sm:px-3.5 sm:text-[12px] sm:translate-y-1.5 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:focus-visible:translate-y-0 sm:focus-visible:opacity-100"
         >
           <span>Add</span>
           <Plus className="h-3 w-3 sm:h-3.5 sm:w-3.5" />

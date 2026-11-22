@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShoppingBag, Volume2, VolumeX } from 'lucide-react';
-import type{ PageId } from '../types';
+import {type PageId } from '../types';
 import { ArtSvg } from './ArtSvg';
 
 interface HeaderProps {
@@ -40,8 +40,8 @@ export const Header: React.FC<HeaderProps> = ({
     <header
       className={`sticky top-0 z-50 h-[var(--header)] transition-colors duration-300 border-b ${
         isScrolled
-          ? 'bg-[#181F26]/90 border-[var(--line)] backdrop-blur-xl'
-          : 'bg-[#181F26]/65 border-transparent backdrop-blur-md'
+          ? 'bg-[#0F3D3A]/92 border-[var(--line)] backdrop-blur-xl'
+          : 'bg-[#0F3D3A]/70 border-transparent backdrop-blur-md'
       }`}
     >
       <div className="mx-auto flex h-full w-full max-w-[1440px] items-center justify-between gap-2.5 px-3.5 sm:gap-6 sm:px-8 lg:px-12">
@@ -100,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSwitchView('customer')}
               className={`min-h-[28px] whitespace-nowrap shrink-0 rounded-md px-2 text-[11px] font-semibold transition-colors sm:min-h-[30px] sm:px-2.5 sm:text-[11.5px] ${
                 !isAdmin
-                  ? 'bg-[#2E3A47] text-[var(--clay-2)]'
+                  ? 'bg-[#6C151E] text-[#F5DABF]'
                   : 'text-[var(--muted)] hover:text-[var(--ink)]'
               }`}
             >
@@ -110,7 +110,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSwitchView('admin')}
               className={`min-h-[28px] whitespace-nowrap shrink-0 rounded-md px-2 text-[11px] font-semibold transition-colors sm:min-h-[30px] sm:px-2.5 sm:text-[11.5px] ${
                 isAdmin
-                  ? 'bg-[#2E3A47] text-[var(--clay-2)]'
+                  ? 'bg-[#6C151E] text-[#F5DABF]'
                   : 'text-[var(--muted)] hover:text-[var(--ink)]'
               }`}
             >

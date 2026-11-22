@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { PackageOpen } from 'lucide-react';
-import {type Product } from '../types';
+import type{ Product } from '../types';
 import { ProductCard } from './ProductCard';
 
 interface ShopPageProps {
@@ -67,7 +67,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({
                 onClick={() => onCategoryChange(cat)}
                 className={`min-h-[34px] shrink-0 whitespace-nowrap rounded-lg px-3 text-[12px] font-medium transition-colors sm:px-3.5 sm:text-[12.5px] ${
                   active
-                    ? 'bg-[#2E3A47] text-[var(--clay-2)]'
+                    ? 'bg-[#6C151E] text-[#F5DABF]'
                     : 'text-[var(--muted)] hover:text-[var(--ink)]'
                 }`}
               >

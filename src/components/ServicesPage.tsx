@@ -55,7 +55,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenService }) => 
               className="aspect-[1/1.22]"
               innerClassName={`tone-${svc.tone}`}
             >
-              <span className="absolute left-1/2 top-5 z-20 -translate-x-1/2 whitespace-nowrap rounded-md border border-[var(--clay)]/25 bg-[#1D252E]/88 px-2 py-0.5 text-[10px] font-semibold text-[var(--clay-2)] backdrop-blur-sm tabular-nums sm:top-7 sm:px-2.5 sm:py-1 sm:text-[11px]">
+              <span className="absolute left-1/2 top-5 z-20 -translate-x-1/2 whitespace-nowrap rounded-md border border-[#F5DABF]/25 bg-[#6C151E]/90 px-2 py-0.5 text-[10px] font-semibold text-[#F5DABF] backdrop-blur-sm tabular-nums sm:top-7 sm:px-2.5 sm:py-1 sm:text-[11px]">
                 from {formatMoney(svc.price)}
               </span>
               {svc.image ? (
@@ -71,14 +71,14 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenService }) => 
                   </div>
                   <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#141A21]/68 via-transparent via-45% to-[#141A21]/84"
+                    className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-[#081C1A]/65 via-transparent via-45% to-[#081C1A]/86"
                   />
                 </>
               ) : (
                 <div className="flex h-full w-full items-center justify-center py-4">
                   <ArtSvg
                     name={svc.art}
-                    className="w-[46%] text-[#ECC4BA] transition-transform duration-500 ease-out group-hover:scale-105"
+                    className="w-[46%] text-[#F5DABF] transition-transform duration-500 ease-out group-hover:scale-105"
                   />
                 </div>
               )}
@@ -86,7 +86,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenService }) => 
                 type="button"
                 onClick={() => onOpenService(svc.name)}
                 aria-label={`Book ${svc.name}`}
-                className="absolute bottom-3.5 left-1/2 z-30 inline-flex h-7 -translate-x-1/2 items-center gap-1 rounded-lg border border-[var(--clay)]/30 bg-[#1D252E]/92 px-2.5 text-[11px] font-medium text-[var(--ink)] backdrop-blur-md transition-colors hover:border-[var(--clay)]/70 hover:bg-[#2E3A47] sm:bottom-5 sm:h-8 sm:gap-1.5 sm:px-3.5 sm:text-[12px]"
+                className="absolute bottom-3.5 left-1/2 z-30 inline-flex h-7 -translate-x-1/2 items-center gap-1 rounded-lg border border-[#F5DABF]/35 bg-[#0F3D3A]/92 px-2.5 text-[11px] font-medium text-[#F5DABF] backdrop-blur-md transition-colors hover:border-[#F5DABF] hover:bg-[#6C151E] hover:text-[#F5DABF] sm:bottom-5 sm:h-8 sm:gap-1.5 sm:px-3.5 sm:text-[12px]"
               >
                 <span>Book</span>
                 <ArrowRight className="h-3 w-3 sm:h-3.5 sm:w-3.5" />

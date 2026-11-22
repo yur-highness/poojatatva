@@ -164,39 +164,39 @@ export const ShrineCanvas: React.FC<ShrineCanvasProps> = ({
     // PBR Materials
     const brassMat = track(
       new THREE.MeshPhysicalMaterial({
-        color: 0xd9a19a,
-        metalness: 0.94,
-        roughness: 0.24,
+        color: 0xf5dabf,
+        metalness: 0.92,
+        roughness: 0.22,
         anisotropy: 0.65,
         side: THREE.DoubleSide,
       })
     );
     const darkStoneMat = track(
       new THREE.MeshStandardMaterial({
-        color: 0x1c242d,
+        color: 0x0f3d3a,
         metalness: 0.35,
         roughness: 0.52,
       })
     );
     const oilMat = track(
       new THREE.MeshStandardMaterial({
-        color: 0x45282c,
-        roughness: 0.12,
-        emissive: 0xff9b7a,
+        color: 0x6c151e,
+        roughness: 0.14,
+        emissive: 0xf5c896,
         emissiveIntensity: 0,
       })
     );
     const wickMat = track(
       new THREE.MeshStandardMaterial({
-        color: 0x161a20,
+        color: 0x1e0709,
         roughness: 0.95,
       })
     );
     const ringMat = track(
       new THREE.MeshBasicMaterial({
-        color: 0xe09f98,
+        color: 0x6c151e,
         transparent: true,
-        opacity: 0.3,
+        opacity: 0.6,
         polygonOffset: true,
         polygonOffsetFactor: -1,
         polygonOffsetUnits: -1,
@@ -205,7 +205,7 @@ export const ShrineCanvas: React.FC<ShrineCanvasProps> = ({
     const poolMat = track(
       new THREE.MeshBasicMaterial({
         map: glowTex,
-        color: 0xf4a89a,
+        color: 0xf5dabf,
         transparent: true,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
@@ -315,7 +315,7 @@ export const ShrineCanvas: React.FC<ShrineCanvasProps> = ({
       const glowSpriteMat = track(
         new THREE.SpriteMaterial({
           map: glowTex,
-          color: 0xff9a3c,
+          color: 0xf5b97a,
           transparent: true,
           blending: THREE.AdditiveBlending,
           depthWrite: false,
@@ -334,11 +334,11 @@ export const ShrineCanvas: React.FC<ShrineCanvasProps> = ({
     addDiya(-2.7, -1.5, 0.7, 0.7);
     addDiya(2.7, -1.5, 0.7, 1.1);
 
-    // Warm/Cool Lighting Rig
-    const hemi = new THREE.HemisphereLight(0xa3b3d6, 0x241d14, 0.25);
-    const keyLight = new THREE.DirectionalLight(0xffdcb0, 0.35);
+    // Cream / Bordo / Green Lighting Rig
+    const hemi = new THREE.HemisphereLight(0x7cc4b8, 0x2b080c, 0.34);
+    const keyLight = new THREE.DirectionalLight(0xf5dabf, 0.42);
     keyLight.position.set(-6, 9, 8);
-    const flamePoint = new THREE.PointLight(0xffa24a, 0, 16, 1.5);
+    const flamePoint = new THREE.PointLight(0xffb978, 0, 16, 1.5);
     flamePoint.position.set(0, 2.6, 1);
     scene.add(hemi, keyLight, flamePoint);
 
@@ -353,7 +353,7 @@ export const ShrineCanvas: React.FC<ShrineCanvasProps> = ({
       new THREE.PointsMaterial({
         size: 0.14,
         map: glowTex,
-        color: 0xf5c2b6,
+        color: 0xf5dabf,
         transparent: true,
         opacity: 0,
         depthWrite: false,
@@ -651,7 +651,7 @@ export const ShrineCanvas: React.FC<ShrineCanvasProps> = ({
   if (fallback) {
     return (
       <div className={`flex items-center justify-center ${className}`}>
-        <ArtSvg name="diya" className="w-3/5 text-[#ECC4BA]" />
+        <ArtSvg name="diya" className="w-3/5 text-[#F5DABF]" />
       </div>
     );
   }

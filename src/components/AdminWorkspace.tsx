@@ -355,7 +355,7 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
         </thead>
         <tbody className="divide-y divide-[var(--line)]">
           {rows.map((order) => (
-            <tr key={order.id} className="hover:bg-[#1E1B15]">
+            <tr key={order.id} className="hover:bg-[#0F3D3A]">
               <td className="px-3 py-3 font-semibold text-[var(--ink)] tabular-nums">{order.id}</td>
               <td className="px-3 py-3 text-[var(--ink-2)] tabular-nums">{order.date}</td>
               <td className="px-3 py-3 text-[var(--ink-2)]">{order.items}</td>
@@ -419,8 +419,8 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                         onClick={() => onSelectSection(id)}
                         className={`relative flex shrink-0 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 py-2 text-[12.5px] font-medium transition-colors lg:w-full ${
                           active
-                            ? 'bg-[#262018] text-[var(--ink)] shadow-[inset_0_0_0_1px_#3B3326]'
-                            : 'text-[var(--ink-2)] hover:bg-[#1E1A14] hover:text-[var(--ink)]'
+                            ? 'bg-[#6C151E] text-[#F5DABF] shadow-[inset_0_0_0_1px_rgba(245,218,191,0.28)]'
+                            : 'text-[var(--ink-2)] hover:bg-[#134642] hover:text-[var(--ink)]'
                         }`}
                       >
                         {active && (
@@ -723,13 +723,13 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                   </thead>
                   <tbody className="divide-y divide-[var(--line)]">
                     {products.map((p) => (
-                      <tr key={p.id} className="hover:bg-[#232C36]">
+                      <tr key={p.id} className="hover:bg-[#0F3D3A]">
                         <td className="px-3 py-3">
                           <div className="flex items-center gap-3">
                             <span
                               className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg tone-${p.tone}`}
                             >
-                              <ArtSvg name={p.art} className="w-5 text-[#ECC4BA]" />
+                              <ArtSvg name={p.art} className="w-5 text-[var(--sage)]" />
                             </span>
                             <span className="font-semibold text-[var(--ink)]">{p.name}</span>
                           </div>
@@ -754,7 +754,7 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                                   setStockDrafts((d) => ({ ...d, [p.id]: e.target.value }))
                                 }
                                 aria-label={`Stock for ${p.name}`}
-                                className="min-h-[34px] w-16 rounded-lg border border-[var(--line-2)] bg-[#12100D] px-2 text-[12.5px] tabular-nums focus:border-[var(--clay)] focus:outline-none"
+                                className="min-h-[34px] w-16 rounded-lg border border-[var(--line-2)] bg-[#071A18] px-2 text-[12.5px] tabular-nums focus:border-[var(--clay)] focus:outline-none"
                               />
                               <button
                                 type="button"
@@ -1075,7 +1075,7 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                       <span className="text-[var(--muted)]">{label}</span>
                       <div className="h-1.5 overflow-hidden rounded-full bg-[var(--paper-2)]">
                         <div
-                          className="h-full rounded-full bg-gradient-to-r from-[#A97F3F] to-[var(--clay)]"
+                          className="h-full rounded-full bg-gradient-to-r from-[var(--sage)] to-[var(--clay)]"
                           style={{ width: `${pct}%` }}
                         />
                       </div>
@@ -1096,7 +1096,7 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                       value={campaignDraft}
                       onChange={(e) => setCampaignDraft(e.target.value)}
                       placeholder="Diwali collection"
-                      className="min-h-[40px] flex-1 rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3 text-[14px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
+                      className="min-h-[40px] flex-1 rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3 text-[14px] text-[var(--ink)] focus:border-[var(--clay)] focus:outline-none"
                     />
                     <button
                       type="button"
@@ -1353,7 +1353,7 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                   <input
                     defaultValue="PoojaTatva"
                     disabled={!can('settings_edit')}
-                    className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3 text-[14px] text-[var(--ink)] disabled:opacity-60"
+                    className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3 text-[14px] text-[var(--ink)] disabled:opacity-60"
                   />
                 </div>
                 <div>
@@ -1363,7 +1363,7 @@ export const AdminWorkspace: React.FC<AdminWorkspaceProps> = ({
                   <input
                     defaultValue="care@poojatatva.com"
                     disabled={!can('settings_edit')}
-                    className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#12100D] px-3 text-[14px] text-[var(--ink)] disabled:opacity-60"
+                    className="min-h-[42px] w-full rounded-xl border border-[var(--line-2)] bg-[#071A18] px-3 text-[14px] text-[var(--ink)] disabled:opacity-60"
                   />
                 </div>
                 {can('settings_edit') && (

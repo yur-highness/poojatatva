@@ -415,16 +415,16 @@ export default function App() {
       {/* MAIN SACRED MANDALA BACKGROUND */}
       <div
         aria-hidden="true"
-        className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#181F26]"
+        className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#092220]"
       >
         <img
           ref={bgMandalaRef}
           src="/assets/aistudio/download__4__4e2b2c6e.jpeg"
           alt=""
           referrerPolicy="no-referrer"
-          className="h-full w-full object-cover object-center opacity-[0.22] grayscale-[0.65] brightness-95 will-change-transform"
+          className="h-full w-full object-cover object-center opacity-[0.18] grayscale-[0.55] brightness-95 will-change-transform"
         />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_34%,rgba(223,158,151,0.12)_0%,rgba(24,31,38,0.68)_52%,rgba(24,31,38,0.95)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_34%,rgba(108,21,30,0.38)_0%,rgba(15,61,58,0.72)_52%,rgba(9,34,32,0.96)_100%)]" />
       </div>
 
       <div className="relative z-10">
@@ -630,7 +630,7 @@ export default function App() {
       <div
         role="status"
         aria-live="polite"
-        className={`pointer-events-none fixed bottom-20 left-1/2 z-[200] -translate-x-1/2 rounded-full bg-gradient-to-r from-[#F4CBC1] to-[#DF9E97] px-5 py-2.5 text-center text-[13px] font-semibold text-[#211517] shadow-[0_18px_40px_-18px_rgba(0,0,0,0.85)] transition-all duration-300 md:bottom-6 ${
+        className={`pointer-events-none fixed bottom-20 left-1/2 z-[200] -translate-x-1/2 rounded-full border border-[#F5DABF]/35 bg-[#6C151E] px-5 py-2.5 text-center text-[13px] font-semibold text-[#F5DABF] shadow-[0_18px_40px_-18px_rgba(0,0,0,0.85)] transition-all duration-300 md:bottom-6 ${
           toastMsg ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'
         }`}
       >
